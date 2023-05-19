@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-center": [],
+    "modules-right": ["network", "pulseaudio","temperature", "cpu", "memory", "battery", "clock"],
+    "pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "🔉 {volume}%",
+	},
+    "network": {
+		"tooltip": false,
+		"format-wifi": " {essid} {ipaddr}",
+		"format-ethernet": " {ipaddr}"
+	},
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "format": "⧮ {capacity}%",
+    },
+    "cpu": {
+		"tooltip": false,
+		"format": "⚒ {}%"
+	},
+	"memory": {
+		"tooltip": false,
+		"format": "☢ {}%"
+	},
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }
+}
